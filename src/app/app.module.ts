@@ -3,18 +3,19 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
-
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { KintoneProvider } from '../providers/kintone/kintone';
+
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -24,7 +25,8 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    KintoneProvider,
   ]
 })
 export class AppModule {}
