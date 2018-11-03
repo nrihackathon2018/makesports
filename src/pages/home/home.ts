@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { MakeNewSportsPage } from '../make-new-sports/make-new-sports';
 import {JoinSportsPage} from "../join-sports/join-sports";
 
@@ -9,7 +9,7 @@ import {JoinSportsPage} from "../join-sports/join-sports";
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,public nav: NavParams) {
 
   }
 
@@ -21,5 +21,9 @@ export class HomePage {
   }
   goToHomePage(){
     this.navCtrl.push(HomePage);
+  }
+
+  goToDetailPage(id: number) {
+    this.navCtrl.push(DetailPage,{itemId:id});
   }
 }
