@@ -40,5 +40,6 @@ export class KintoneProvider {
         .catch((err) => {
             console.log(err.get());
         });
+    return;
   }
 }
