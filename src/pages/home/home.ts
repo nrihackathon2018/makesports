@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { MakeNewSportsPage } from '../make-new-sports/make-new-sports';
 
 @Component({
   selector: 'page-home',
@@ -11,4 +12,7 @@ export class HomePage {
 
   }
 
+  goToMakeNewSportsPage(){
+    this.navCtrl.push(MakeNewSportsPage);
+  }
 }
