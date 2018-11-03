@@ -11,16 +11,16 @@ import {HomePage} from "../home/home";
 
 @IonicPage()
 @Component({
-  selector: 'page-make-new-sports',
-  templateUrl: 'make-new-sports.html',
+  selector: 'join-sports',
+  templateUrl: 'join-sports.html',
 })
-export class MakeNewSportsPage {
+export class JoinSportsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MakeNewSportsPage');
+    console.log('ionViewDidLoad JoinSportsPage');
   }
   goToHomePage(){
     this.navCtrl.push(HomePage);

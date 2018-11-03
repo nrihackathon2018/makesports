@@ -43,7 +43,6 @@ body {
   }
   .-username {
     font-size: 14px;
-
   }
 }
 
@@ -80,9 +79,65 @@ body {
       border-color: #a2a2a2;
     }
   }
+
+  &.-add {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    box-shadow: 0 0 2px 0 rgba(66,66,66,.25);
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-image: url("/assets/icon/upload.svg");
+      background-size: 24px 24px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &.activated {
+      background: #e5e5e5;
+      box-shadow: 0 0 1px 0 rgba(66,66,66,.15);
+    }
+  }
+
+  &.-submit {
+    width: 100%;
+    padding: 15px;
+    background: #2ec95c;
+    border: #ccc 1px solid;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    &.activated {
+      background: #21b94e;
+      border-color: #a2a2a2;
+    }
+  }
 }
 
 .ttl {
+  &.-primary {
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 5px 0 0 40px;
+    border-bottom: 2px solid #ccc;
+    font-size: 24px;
+    line-height: 1.6;
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 12px;
+      left: 5px;
+      border: 4px solid #98c93c;
+      border-radius: 50%;
+    }
+  }
   &.-secondary {
     margin-top: 25px;
     margin-bottom: 15px;
@@ -147,5 +202,33 @@ body {
 
       }
     }
+  }
+}
+
+.input-items {
+  margin-top: 15px;
+  > input, textarea {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    box-shadow: 0 0 5px 0 rgba(66,66,66,.25) inset;
+    border: 1px solid rgba(44,44,44,.25);
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    line-height: 1.4;
+    &::placeholder, &:-moz-placeholder, &::-webkit-input-placeholder {
+      opacity: 1;
+      color: #666;
+    }
+  }
+  > textarea {
+    height: 120px;
+  }
+
+  .img-liquid {
+    width: 100%;
+    max-height: 95vw;
   }
 }

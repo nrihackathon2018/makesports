@@ -16,21 +16,21 @@ export class KintoneProvider {
 
   constructor() {
   }
-   
+
   getMakeSports(sportsId){
-    let APIToken = 'qt9HYoGszroSk9oVUmVt4XxCmklztDkaaHJOn77n'; // your API Token
-    
+    let APIToken = 'Kg5RgjQmtvfCjeEfixorQPe0DqpqQkrayHYNtPj4'; // your API Token
+
     let kintoneAuth = new kintone.Auth();
-    
+
     kintoneAuth.setApiToken(APIToken);
-    
+
     let myDomainName = 'devlgapom.cybozu.com';
-    
+
     let kintoneConnection = new kintone.Connection(myDomainName, kintoneAuth);
-    
+
     let kintoneRecord = new kintone.Record(kintoneConnection);
-    let appID = 1; // target appID
-    
+    let appID = 9; // target appID
+
     let recordID = sportsId;
     kintoneRecord.getRecord(appID,recordID)
         .then((rsp) => {

@@ -11,12 +11,14 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { MakeNewSportsPage } from '../pages/make-new-sports/make-new-sports';
 import { KintoneProvider } from '../providers/kintone/kintone';
+import { JoinSportsPage } from "../pages/join-sports/join-sports";
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    MakeNewSportsPage
+    MakeNewSportsPage,
+    JoinSportsPage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,8 @@ import { KintoneProvider } from '../providers/kintone/kintone';
   entryComponents: [
     MyApp,
     HomePage,
-    MakeNewSportsPage
+    MakeNewSportsPage,
+    JoinSportsPage
   ],
   providers: [
     StatusBar,
