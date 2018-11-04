@@ -22,6 +22,7 @@ export class DetailPage {
   SportsImage;
   SportsName;
   SportsDesc;
+  EntryFlg = false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public kintoneProvider: KintoneProvider) {
     // userParams is an object we have in our nav-parameters
@@ -49,6 +50,14 @@ export class DetailPage {
   // goToBattlePage(){
   //   this.navCtrl.push(BattlePage);
   // }
+
+  changeEntryFlg(){
+    if(this.EntryFlg){
+      this.EntryFlg = false;
+    }else{
+      this.EntryFlg = true;
+    }
+  }
 
 
 
