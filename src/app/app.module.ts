@@ -12,13 +12,15 @@ import { HomePage } from '../pages/home/home';
 import { MakeNewSportsPage } from '../pages/make-new-sports/make-new-sports';
 import { KintoneProvider } from '../providers/kintone/kintone';
 import { JoinSportsPage } from "../pages/join-sports/join-sports";
+import { DetailPage } from "../pages/detail/detail";
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     MakeNewSportsPage,
-    JoinSportsPage
+    JoinSportsPage,
+    DetailPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,8 @@ import { JoinSportsPage } from "../pages/join-sports/join-sports";
     MyApp,
     HomePage,
     MakeNewSportsPage,
-    JoinSportsPage
+    JoinSportsPage,
+    DetailPage
   ],
   providers: [
     StatusBar,

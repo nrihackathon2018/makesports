@@ -31,7 +31,8 @@ export class KintoneProvider {
     let kintoneRecord = new kintone.Record(kintoneConnection);
     let appID = 9; // target appID
 
-    let recordID = sportsId;
+    // let recordID = sportsId;
+    let recordID = 1;
     kintoneRecord.getRecord(appID,recordID)
         .then((rsp) => {
             console.log(rsp);
