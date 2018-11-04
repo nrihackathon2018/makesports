@@ -15,6 +15,7 @@ import { JoinSportsPage } from "../pages/join-sports/join-sports";
 import { DetailPage } from "../pages/detail/detail";
 import { PredictionProvider } from '../providers/prediction/prediction';
 import {HttpClientModule} from '@angular/common/http'
+import {InspectionPage} from "../pages/inspection/inspection";
 
 @NgModule({
   declarations: [
@@ -22,11 +23,12 @@ import {HttpClientModule} from '@angular/common/http'
     HomePage,
     MakeNewSportsPage,
     JoinSportsPage,
-    DetailPage
+    DetailPage,
+    InspectionPage
   ],
   imports: [
     BrowserModule,
-    HttpClientModule, 
+    HttpClientModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
@@ -35,7 +37,8 @@ import {HttpClientModule} from '@angular/common/http'
     HomePage,
     MakeNewSportsPage,
     JoinSportsPage,
-    DetailPage
+    DetailPage,
+    InspectionPage
   ],
   providers: [
     StatusBar,

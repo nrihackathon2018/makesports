@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { KintoneProvider } from '../../providers/kintone/kintone';
 import {InspectionPage} from "../inspection/inspection";
+import {HomePage} from "../home/home";
 // import {BattlePage} from "../battle/battle";
 
 /**
@@ -47,6 +48,9 @@ export class DetailPage {
     this.navCtrl.push(InspectionPage);
   }
 
+  goToHomePage(){
+    this.navCtrl.push(HomePage);
+  }
   // goToBattlePage(){
   //   this.navCtrl.push(BattlePage);
   // }
