@@ -37,12 +37,13 @@ export class PredictionProvider {
       body: obj,
     };
     
-    request(params, function(err, resp, body) {
+    return request(params, function(err, resp, body) {
       if (err) {
         console.log(err);
-        return;
+        return 1;
       }
       console.log(body);
+      return body.Result.pred;
     });
   }
 
