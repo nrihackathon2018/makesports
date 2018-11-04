@@ -13,6 +13,7 @@ import { MakeNewSportsPage } from '../pages/make-new-sports/make-new-sports';
 import { KintoneProvider } from '../providers/kintone/kintone';
 import { JoinSportsPage } from "../pages/join-sports/join-sports";
 import { DetailPage } from "../pages/detail/detail";
+import {InspectionPage} from "../pages/inspection/inspection";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DetailPage } from "../pages/detail/detail";
     HomePage,
     MakeNewSportsPage,
     JoinSportsPage,
-    DetailPage
+    DetailPage,
+    InspectionPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { DetailPage } from "../pages/detail/detail";
     HomePage,
     MakeNewSportsPage,
     JoinSportsPage,
-    DetailPage
+    DetailPage,
+    InspectionPage
   ],
   providers: [
     StatusBar,
