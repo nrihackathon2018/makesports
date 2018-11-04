@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+declare function require(x: string): any;
 
 /*
   Generated class for the PredictionProvider provider.

@@ -60,8 +60,10 @@
   <h1 class="ttl -primary">{{SportsName}}</h1>
   <h2 class="ttl -secondary">説明</h2>
   <p>{{SportsDesc}}</p>
+  <button *ngIf = "!EntryFlg" type="submit" class="btn -submit" (click)= "changeEntryFlg()">参加する</button>
+  <button *ngIf = "EntryFlg" type="submit" class="btn -submit out" (click)= "changeEntryFlg()">退会する</button>
     <button class="btn -general">対戦を始める</button>
-    <button class="btn -general">対戦を見る</button>
+    <button class="btn -general" (click)="goToInspectionPage()">対戦を見る</button>
 
 
 </ion-content>
