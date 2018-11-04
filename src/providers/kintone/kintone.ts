@@ -34,13 +34,13 @@ export class KintoneProvider {
 
     // let recordID = sportsId;
     // let recordID = 1;
-    if(sportsId == 1){
+    if(sportsId == 2){
       this.SportsDetails ={
         "records": [
           {
             "スポーツID": {
               "type": 'NUMBER',
-              "value": "1"
+              "value": "2"
             },
             "スポーツ名": {
               "type": "SINGLE_LINE_TEXT",
@@ -93,27 +93,27 @@ export class KintoneProvider {
       return this.SportsDetails;
     }
 
-    if(sportsId == 2){
+    if(sportsId == 1){
       this.SportsDetails ={
         "records": [
           {
             "スポーツID": {
               "type": 'NUMBER',
-              "value": "2"
+              "value": "1"
             },
             "スポーツ名": {
               "type": "SINGLE_LINE_TEXT",
               "value": [
-                "ベイブレード"
+                "ラップバトル"
               ]
             },
             "スポーツ説明": {
               "type": "SINGLE_LINE_TEXT",
-              "value": "ぶーーーーーん"
+              "value": "ラップバトルしようぜ！ThugLifeとは、「やりたいようにやる」という意味のスラングです！初心者の方でも大歓迎です！"
             },
             "画像URL": {
               "type": "RECORD_NUMBER",
-              "value": "/assets/imgs/koma.jpg"
+              "value": "/assets/imgs/thuglife.png"
             },
             "更新者": {
               "type": "MODIFIER",

@@ -16,6 +16,7 @@ import { DetailPage } from "../pages/detail/detail";
 import { PredictionProvider } from '../providers/prediction/prediction';
 import {HttpClientModule} from '@angular/common/http'
 import {InspectionPage} from "../pages/inspection/inspection";
+import { Camera } from '@ionic-native/camera';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import {InspectionPage} from "../pages/inspection/inspection";
     InspectionPage
   ],
   providers: [
-    StatusBar,
+      Camera,
+      StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     KintoneProvider,

@@ -61,18 +61,19 @@
   <form action="">
     <div class="input-items">
       <label for="sports_name">スポーツ名</label>
-      <input type="text" id="sports_name" name="sports_name" placeholder="スポーツの名前">
+      <input type="text" id="sports_name" name="sports_name" placeholder="スポーツの名前" [(ngModel)]="sportsName">
     </div>
     <div class="input-items">
       <label for="sports_name">スポーツの説明</label>
-      <textarea type="text" id="sports_desc" name="sports_desc" placeholder="スポーツの説明"></textarea>
+      <textarea type="text" id="sports_desc" name="sports_desc" placeholder="スポーツの説明" [(ngModel)]="sportsDesc"></textarea>
     </div>
     <div class="input-items">
       <label for="sports_name">スポーツのイメージ画像</label>
-      <button class="btn -add"></button>
-      <img src="/assets/imgs/snoop_dogg.gif" alt="" class="img-liquid"/>
+      <button class="btn -add" (click)="addPic()"></button>
+      <button *ngIf="imageDataBase64 != null" class="btn -delete" (click)="deletePic()"></button>
+      <img *ngIf="imageDataBase64 != null" id="sports_img_sample" src="data:image/jpeg;base64,{{imageDataBase64}}" class="img-liquid"/>
     </div>
-    <button type="submit" class="btn -submit">この内容で作成する</button>
+    <button class="btn -submit" (click)="confirm()">この内容で作成する</button>
   </form>
 
 </ion-content>

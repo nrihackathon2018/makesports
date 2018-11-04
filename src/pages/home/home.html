@@ -76,53 +76,56 @@
     </a>
 
     <a href="jsvascript:void(0);" class="item" (click)= "goToDetailPage(2)">
-      <img src="/assets/imgs/snoop_dogg.gif" alt="snoop-dogg" width="40">
+      <img src="/assets/imgs/apple.jpg" alt="snoop-dogg" width="40">
       <dl>
-        <dt>テニス</dt>
+        <dt>りんごの皮むき</dt>
         <dd>
-          <p>テニスとは・ああああああああああああいいffffaさdふぁsふぁふうぇえっっうぃぁdふぁいいいいいいいいいいいいいいいいいふぁ</p>
+          <p>りんごまるごとの皮の早むき。</p>
         </dd>
       </dl>
     </a>
 
     <a href="jsvascript:void(0);" class="item" (click)= "goToDetailPage(3)">
-      <img src="/assets/imgs/snoop_dogg.gif" alt="snoop-dogg" width="40">
+      <img src="/assets/imgs/tramp.jpg" alt="snoop-dogg" width="40">
       <dl>
-        <dt>テニス</dt>
+        <dt>トランプタワー組立て</dt>
         <dd>
-          <p>テニスとは・ああああああああああああいいffffaさdふぁsふぁふうぇえっっうぃぁdふぁいいいいいいいいいいいいいいいいいふぁ</p>
+          <p>Great America</p>
         </dd>
       </dl>
     </a>
 
     <a href="jsvascript:void(0);" class="item" (click)= "goToDetailPage(4)">
-      <img src="/assets/imgs/snoop_dogg.gif" alt="snoop-dogg" width="40">
+      <img src="/assets/imgs/kenball.jpg" alt="snoop-dogg" width="40">
       <dl>
-        <dt>テニス</dt>
+        <dt>けんだま</dt>
         <dd>
-          <p>テニスとは・ああああああああああああいいffffaさdふぁsふぁふうぇえっっうぃぁdふぁいいいいいいいいいいいいいいいいいふぁ</p>
+          <p>穴♂にさす</p>
         </dd>
       </dl>
     </a>
 
     <a href="jsvascript:void(0);" class="item" (click)= "goToDetailPage(5)">
-      <img src="/assets/imgs/snoop_dogg.gif" alt="snoop-dogg" width="40">
+      <img src="/assets/imgs/stop.png" alt="snoop-dogg" width="40">
       <dl>
-        <dt>テニス</dt>
+        <dt>ストップウォッチ止め</dt>
         <dd>
-          <p>テニスとは・ああああああああああああいいffffaさdふぁsふぁふうぇえっっうぃぁdふぁいいいいいいいいいいいいいいいいいふぁ</p>
+          <p>8.6秒バズーカ</p>
         </dd>
       </dl>
     </a>
 
-    <a href="jsvascript:void(0);" class="item" (click)= "goToDetailPage(6)">
-      <img src="/assets/imgs/snoop_dogg.gif" alt="snoop-dogg" width="40">
+    <a href="jsvascript:void(0);" class="item" *ngIf="sportsName != null">
+      <div> 
+      <img src="data:image/jpeg;base64,{{imageDataBase64}}" alt="snoop-dogg" width="40" *ngIf="imageDataBase64 != null || imageDataBase64 != undefined">
+    </div>
       <dl>
-        <dt>テニス</dt>
+        <dt>{{sportsName}}</dt>
         <dd>
-          <p>テニスとは・ああああああああああああいいffffaさdふぁsふぁふうぇえっっうぃぁdふぁいいいいいいいいいいいいいいいいいふぁ</p>
+          <p>{{sportsDesc}}}</p>
         </dd>
       </dl>
     </a>
+
   </div>
 </ion-content>

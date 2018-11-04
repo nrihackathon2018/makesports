@@ -10,4 +10,5 @@ import { MakeNewSportsPage } from './make-new-sports';
     IonicPageModule.forChild(MakeNewSportsPage),
   ],
 })
-export class MakeNewSportsPageModule {}
+export class MakeNewSportsPageModule {
+}

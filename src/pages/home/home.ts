@@ -9,11 +9,14 @@ import {DetailPage} from "../detail/detail";
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+  imageDataBase64;
+  sportsDesc;
+  sportsName = null;
   constructor(public navCtrl: NavController,public nav: NavParams) {
-
+    this.sportsName = nav.get('sportsName');
+    this.sportsDesc = nav.get('sportsDesc');
+    this.imageDataBase64 = nav.get('imageDataBase64');
   }
-
   goToMakeNewSportsPage(){
     this.navCtrl.push(MakeNewSportsPage);
   }
