@@ -54,40 +54,13 @@
   </ion-navbar>
 </ion-header>
 
+
 <ion-content padding>
-  <h1 class="ttl -primary">ラップバトル</h1>
-<div class="point-container">
-  <div class="point-box">
-    <span class="point">10pt</span>
-    <img class="point-image" src="/assets/imgs/snoop_dogg.gif">
-  </div>
-  <div class="point-box">
-    <span class="point">20pt</span>
-    <img class="point-image" src="/assets/imgs/shia_labeouf.gif">
-  </div>
-  <div class="battle-anim"></div>
+<h1 class="ttl -primary">対戦</h1>
+<div id="movie" class="movie">
+  <img src="/assets/imgs/ringo22.jpg" alt="" class="main-visual">
 </div>
-
-<h2 class="ttl -battle">対戦中！</h2>
-<div class="audience-seat">
-  <p class="audience-count">現在<span id="audience-counter">17</span>人が観戦中</p>
-  <div class="audience -male"></div>
-  <div class="audience -male"></div>
-  <div class="audience -male"></div>
-  <div class="audience -male"></div>
-  <div class="audience -male"></div>
-  <div class="audience -male"></div>
-  <div class="audience -male"></div>
-  <div class="audience -female"></div>
-  <div class="audience -female"></div>
-  <div class="audience -female"></div>
-  <div class="audience -female"></div>
-  <div class="audience -female"></div>
-  <div class="audience -female"></div>
-  <div class="audience -female"></div>
-  <div class="audience -female"></div>
-  <div class="audience -female"></div>
-  <div class="audience -female"></div>
-</div>
-
+<h2 class="ttl -secondary">りんごの皮むき</h2>
+<p>計測が終了したらボタンを押してください。</p>
+<button class="btn -submit" (click)="battleWin()">計測終了</button>
 </ion-content>

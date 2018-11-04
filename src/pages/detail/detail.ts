@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { KintoneProvider } from '../../providers/kintone/kintone';
 import {InspectionPage} from "../inspection/inspection";
 import {HomePage} from "../home/home";
-// import {BattlePage} from "../battle/battle";
+import {BattlePage} from "../battle/battle";
 
 /**
  * Generated class for the DetailPage page.
@@ -46,6 +46,10 @@ export class DetailPage {
 
   goToInspectionPage(){
     this.navCtrl.push(InspectionPage);
+  }
+
+  goToBattlePage(){
+    this.navCtrl.push(BattlePage);
   }
 
   goToHomePage(){

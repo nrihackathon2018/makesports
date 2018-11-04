@@ -16,7 +16,11 @@ import { DetailPage } from "../pages/detail/detail";
 import { PredictionProvider } from '../providers/prediction/prediction';
 import {HttpClientModule} from '@angular/common/http'
 import {InspectionPage} from "../pages/inspection/inspection";
+<<<<<<< HEAD
 import { Camera } from '@ionic-native/camera';
+=======
+import {BattlePage} from "../pages/battle/battle";
+>>>>>>> origin/develop
 
 @NgModule({
   declarations: [
@@ -25,7 +29,8 @@ import { Camera } from '@ionic-native/camera';
     MakeNewSportsPage,
     JoinSportsPage,
     DetailPage,
-    InspectionPage
+    InspectionPage,
+    BattlePage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +44,8 @@ import { Camera } from '@ionic-native/camera';
     MakeNewSportsPage,
     JoinSportsPage,
     DetailPage,
-    InspectionPage
+    InspectionPage,
+    BattlePage
   ],
   providers: [
       Camera,

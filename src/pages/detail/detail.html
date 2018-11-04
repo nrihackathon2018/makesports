@@ -3,12 +3,12 @@
     <ion-title>
       <div class="global-header">
         <a href="javascript:void(0);" (click)= "goToHomePage()">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="586 282 139 170" width="50" height="50"><g data-item-type="text" data-item="Business" id="logo__item--business" class="logo__item">
-            <g class="logo__item__inner" transform="translate(588.5234375 443.98837193828973) scale(1 1) rotate(0 0 0)">
-              <text data-part-id="logo__item--business" dy="0" dominant-baseline="auto" alignment-baseline="auto" font-family="Montserrat" font-size="32px" fill="#98C93C" letter-spacing="0" font-weight="bold" font-style="normal" data-font-family="Montserrat" data-font-weight="bold" data-font-style="normal" data-ttf-url="/builder_assets/fontsttf/font-montserrat-bold-normal.ttf">sports++</text>
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="546 282 165 170" width="54" height="50"><g data-item-type="text" data-item="Business" id="logo__item--business" class="logo__item">
+            <g class="logo__item__inner" transform="translate(550.1640625 443.98837193828973) scale(1 1) rotate(0 0 0)">
+              <text data-part-id="logo__item--business" dy="0" dominant-baseline="auto" alignment-baseline="auto" font-family="Montserrat" font-size="32px" fill="#98C93C" letter-spacing="0" font-weight="bold" font-style="normal" data-font-family="Montserrat" data-font-weight="bold" data-font-style="normal" data-ttf-url="/builder_assets/fontsttf/font-montserrat-bold-normal.ttf">we sports</text>
             </g>
           </g><g data-item-type="image" data-item="Image" data-logo-item="" id="logo__item--logo_0" class="logo__item">
-            <g class="logo__item__inner" transform="translate(592.7322678130274 281.5) scale(0.8720929845724334 0.8720929845724334) rotate(0 0 0)">
+            <g class="logo__item__inner" transform="translate(564.2322678130274 281.5) scale(0.8720929845724334 0.8720929845724334) rotate(0 0 0)">
 
               <g>
                 <g>
@@ -54,7 +54,6 @@
   </ion-navbar>
 </ion-header>
 
-
 <ion-content padding>
   <img  src={{SportsImage}} class="main-visual">
   <h1 class="ttl -primary">{{SportsName}}</h1>
@@ -62,7 +61,7 @@
   <p>{{SportsDesc}}</p>
   <button *ngIf = "!EntryFlg" type="submit" class="btn -submit" (click)= "changeEntryFlg()">参加する</button>
   <button *ngIf = "EntryFlg" type="submit" class="btn -submit out" (click)= "changeEntryFlg()">退会する</button>
-    <button class="btn -general">対戦を始める</button>
+    <button class="btn -general" (click)="goToBattlePage()">対戦を始める</button>
     <button class="btn -general" (click)="goToInspectionPage()">対戦を見る</button>
 
 
