@@ -26,7 +26,6 @@
     "@ionic-native/splash-screen": "~4.15.0",
     "@ionic-native/status-bar": "~4.15.0",
     "@ionic/storage": "2.2.0",
-    "@types/node": "^10.12.2",
     "@types/request": "^2.48.0",
     "cordova": "^8.1.2",
     "ionic-angular": "3.9.2",
@@ -41,6 +40,7 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.2.0",
+    "@types/node": "^10.12.2",
     "typescript": "~2.6.2"
   },
   "description": "An Ionic project",
