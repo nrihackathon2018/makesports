@@ -13,6 +13,8 @@ import { MakeNewSportsPage } from '../pages/make-new-sports/make-new-sports';
 import { KintoneProvider } from '../providers/kintone/kintone';
 import { JoinSportsPage } from "../pages/join-sports/join-sports";
 import { DetailPage } from "../pages/detail/detail";
+import { PredictionProvider } from '../providers/prediction/prediction';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import { DetailPage } from "../pages/detail/detail";
   ],
   imports: [
     BrowserModule,
+    HttpClientModule, 
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
@@ -39,6 +42,7 @@ import { DetailPage } from "../pages/detail/detail";
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     KintoneProvider,
+    PredictionProvider,
   ]
 })
 export class AppModule {}
