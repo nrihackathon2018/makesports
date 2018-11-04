@@ -16,6 +16,7 @@ import { DetailPage } from "../pages/detail/detail";
 import { PredictionProvider } from '../providers/prediction/prediction';
 import {HttpClientModule} from '@angular/common/http'
 import {InspectionPage} from "../pages/inspection/inspection";
+import {BattlePage} from "../pages/battle/battle";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {InspectionPage} from "../pages/inspection/inspection";
     MakeNewSportsPage,
     JoinSportsPage,
     DetailPage,
-    InspectionPage
+    InspectionPage,
+    BattlePage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import {InspectionPage} from "../pages/inspection/inspection";
     MakeNewSportsPage,
     JoinSportsPage,
     DetailPage,
-    InspectionPage
+    InspectionPage,
+    BattlePage
   ],
   providers: [
     StatusBar,
